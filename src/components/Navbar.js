@@ -16,7 +16,10 @@ export default function NavBar() {
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/Login">Login</Link>
+                                <Link className="nav-link" to="/login">Login</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/createUser">signup</Link>
                             </li>
                         </ul>
                     </div>

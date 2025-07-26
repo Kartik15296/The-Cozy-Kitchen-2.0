@@ -5,15 +5,6 @@ const connectMongoDb = async () => {
     try {
         await mongoose.connect(mongoURI);
         console.log("Connected successfully to MongoDB");
-
-        try {
-            const database_data = mongoose.connection.db.collection("foodCategory");
-            data = await database_data.find({}).toArray()
-            console.log(data);
-        }
-        catch (err) {
-            console.log("catogory data not found");
-        }
     }
     catch (err) {
         console.error("Error connecting to DB through URL:", err);
